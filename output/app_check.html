@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Campus Customs — App Check</title>
+<style>
+  body {
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    color: #222;
+    background: #fff;
+  }
+  h1 {
+    color: #00356b;
+  }
+  h2 {
+    color: #00356b;
+    border-bottom: 2px solid #e8b923;
+    padding-bottom: 0.4rem;
+    margin-top: 3rem;
+  }
+  .check {
+    margin-bottom: 2rem;
+  }
+  .shots {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+  .shots figure {
+    margin: 0;
+    max-width: 420px;
+  }
+  .shots img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: block;
+  }
+  .shots figcaption {
+    font-size: 0.85rem;
+    color: #555;
+    margin-top: 0.4rem;
+  }
+  p.proof {
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<h1>Campus Customs — App Check</h1>
+
+<section class="check">
+  <h2>1. Chat accurately checks inventory</h2>
+  <div class="shots">
+    <figure>
+      <img src="app_check_images/chat_inventory_check.jpg" alt="Chat showing an inventory question and the bot's out-of-stock answer">
+      <figcaption>Chat asked about Baseball Left Chest Crewneck, size XS.</figcaption>
+    </figure>
+    <figure>
+      <img src="app_check_images/db_inventory_data.jpg" alt="Database query result for the same product's inventory">
+      <figcaption>Database query for the same product/size.</figcaption>
+    </figure>
+  </div>
+  <p class="proof">Proves: the chatbot's "out of stock" answer for size XS matches the live database (quantity = 0), not a guess.</p>
+</section>
+
+<section class="check">
+  <h2>2. Dynamic search result cards for a category question</h2>
+  <div class="shots">
+    <figure>
+      <img src="app_check_images/hoodie_search_on_products_page.jpg" alt="Open chat asking what hoodies are available, on the All Products page, with hoodie cards outlined in gold behind it">
+      <figcaption>Chat request "What hoodies do you have?" open on the All Products page, with matching hoodie cards gold-outlined at the top.</figcaption>
+    </figure>
+  </div>
+  <p class="proof">Proves: asking about a product category in chat dynamically reorders the All Products page, surfacing and gold-outlining the matching hoodie cards at the top.</p>
+</section>
+
+<section class="check">
+  <h2>3. Chat button draws attention on page load</h2>
+  <div class="shots">
+    <figure>
+      <img src="app_check_images/chat_button_blink.jpg" alt="Homepage on load, with the chat button outlined in gold">
+      <figcaption>Homepage immediately after loading, before any click.</figcaption>
+    </figure>
+  </div>
+  <p class="proof">Proves: the chat button is outlined in gold as soon as the page opens, to draw the user's attention before they've interacted with it.</p>
+</section>
+
+</body>
+</html>

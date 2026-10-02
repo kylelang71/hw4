@@ -1,0 +1,17 @@
+# Secrets
+.env
+
+# Local-only data pack (real database + product images)
+/data/
+
+# Python
+backend/.venv/
+backend/__pycache__/
+*.pyc
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# OS
+.DS_Store

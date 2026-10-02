@@ -1,0 +1,7 @@
+- Added category sections to the Home page (e.g. hoodies, long sleeves): to give users suggestions before viewing all products.
+- Added a proactive welcome message from the chat agent: to welcome people to the page as soon as they arrive.
+- Added controls so the agent never shares other users' information — IDs, emails, or passwords — with anyone using the chatbot: to protect customer privacy.
+- Baked the catalogue's product categories into the agent's static instructions instead of a callable `list_product_types` tool: to remove a full model round trip from most product questions, since tool calls are the single biggest cost in response time.
+- Told the agent (in `prompt.md`) not to call `get_product_details` when `search_products` already returned the price/description it needs: to avoid a redundant model round trip for information it already has.
+- Reused one database connection per chat turn instead of opening/closing a fresh one for every tool call, user lookup, history load, and save: a single message was opening 5+ short-lived connections.
+- Attempted streaming the agent's reply token-by-token (`agent.run_stream()`) so the first words appear immediately instead of after the full reply: reverted after testing, because this specific Portkey/Azure OpenAI gateway returns a malformed cached function-call ID on any streamed reply that uses a tool, breaking every product/price/stock question. Non-streaming replies work correctly with the same tools, so the chat stayed on the single-response approach.

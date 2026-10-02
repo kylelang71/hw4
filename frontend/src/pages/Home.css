@@ -1,0 +1,103 @@
+.home-hero-image {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.home-bulldog-banner {
+  position: relative;
+  margin-top: 2.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.home-bulldog-banner img {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+.home-bulldog-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.home-section {
+  margin-top: 2.5rem;
+}
+
+.home-section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-section-header h2 {
+  margin: 0;
+}
+
+.home-intro {
+  font-weight: bold;
+}
+
+.home-section-link {
+  font-size: 0.9rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.home-section-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.25rem;
+}
+
+.home-product-card {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.home-product-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.home-product-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background-color: #f5f5f5;
+}
+
+.home-product-name {
+  padding: 0.6rem 0.75rem 0.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.home-product-price {
+  padding: 0 0.75rem 0.6rem;
+  font-weight: bold;
+  color: var(--yale-blue);
+}

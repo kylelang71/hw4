@@ -1,0 +1,33 @@
+.about-us-gif {
+  display: block;
+  width: 100%;
+  margin: 0 auto 1.5rem;
+  border-radius: 8px;
+}
+
+/* Mimics the classic blue WordArt look from the reference file: a bold
+   rounded face in sky blue with a stepped navy "extrusion" shadow. */
+.wordart-text {
+  font-family: "Arial Rounded MT Bold", "Comic Sans MS", "Segoe UI", sans-serif;
+  font-weight: 900;
+  color: #4fc3f7;
+  text-shadow:
+    1px 1px 0 #1a237e,
+    2px 2px 0 #1a237e,
+    3px 3px 0 #1a237e,
+    4px 4px 0 #1a237e,
+    5px 5px 6px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+h1.wordart-text {
+  font-size: 9rem;
+  letter-spacing: 1px;
+}
+
+p.wordart-text {
+  font-size: 3.45rem;
+  line-height: 1.4;
+  max-width: 1100px;
+  margin: 0 auto;
+}
